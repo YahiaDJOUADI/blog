@@ -1,14 +1,278 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
- <div class="h-screen bg-[url(images/bg.jpg)] ">
-
- </div>
-</body>
+  </head>
+  <body>
+    <div class="h-screen bg-[url(images/bg.jpg)] bg-cover relative">
+      <header>
+        <nav class="flex items-center justify-center gap-10">
+          <img
+            class="size-28 cursor-pointer"
+            src="images/logo.pnj.png"
+            alt=""
+          />
+          <ul class="hidden md:flex gap-10 text-white font-bold cursor-pointer">
+            <li class="text-black">Home</li>
+            <li class="hover:text-black">Services</li>
+            <li class="hover:text-black">About</li>
+            <li class="hover:text-black">Contact</li>
+          </ul>
+          <button
+            class="text-white font-bold px-4 py-2 rounded-lg hover:text-black hover:bg-white transition-all"
+          >
+            LOG IN
+          </button>
+          <button
+            class="text-black font-bold px-4 py-2 rounded-lg bg-white hover:bg-slate-50 transition-all"
+          >
+            SIGN UP
+          </button>
+        </nav>
+      </header>
+      <div class="absolute bottom-0 px-8 flex flex-col gap-2 pb-8">
+        <button
+          class="w-fit text-white font-bold px-4 py-2 rounded-lg border-2 border-white hover:text-black hover:bg-slate-50 transition-all"
+        >
+          Discover
+        </button>
+        <h2 class="text-white font-bold text-3xl">
+          Exploring thr wonders of hilking
+        </h2>
+        <p class="text-white font-semibold tracking-wide">
+          An iconic landmarks, this post the secrets <br />
+          that make this destination a traveler's paradise
+        </p>
+      </div>
+    </div>
+    <section class="px-8 mt-12">
+      <div class="flex flex-col gap-3">
+        <h3 class="font-bold text-4xl">Blog</h3>
+        <p class="tracking-wider text-lg text-slate-800">
+          Here we share travel tips, destination guides,and stories that inspire
+          your next adventure
+        </p>
+        <div>
+          <ul class="flex flex-wrap gap-6">
+            <li class="bg-gray-200 px-3 py-2 cursor-pointer rounded-lg">All</li>
+            <li
+              class="hover:bg-gray-200 px-3 py-2 cursor-pointer hover:rounded-lg"
+            >
+              destination
+            </li>
+            <li
+              class="hover:bg-gray-200 px-3 py-2 cursor-pointer hover:rounded-lg"
+            >
+              Culinary
+            </li>
+            <li
+              class="hover:bg-gray-200 px-3 py-2 cursor-pointer hover:rounded-lg"
+            >
+              Lifestyle
+            </li>
+            <li
+              class="hover:bg-gray-200 px-3 py-2 cursor-pointer hover:rounded-lg"
+            >
+              Tips&Hacks
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-8 py-8 gap-9"
+    >
+      <!-- Article 1 -->
+      <div>
+        <a class="flex flex-col gap-5" href="">
+          <img
+            src="images/apple product.pnj.jpg"
+            class="h-52 rounded-lg"
+            alt=""
+          />
+          <span class="text-gray-500 text-sm">30 Jan 2024 10 mins read</span>
+          <div>
+            <h3 class="font-bold text-xl">
+              Top 5 apple product and gadgets that will trsansform your journeys
+            </h3>
+            <p>
+              Dive into the local culture, discoveer hidden spots, and
+              experiences the authentic,charm that often ...
+            </p>
+          </div>
+          <div class="flex items-center gap-2">
+            <img
+              src="images/yahia.png.JPG "
+              class="size-10 rounded-full"
+              alt=""
+            />
+            <span class="font-semibold">Yahia Djouadi</span>
+          </div>
+        </a>
+      </div>
+      <!-- Article 2 -->
+      <div>
+        <a class="flex flex-col gap-5" href="">
+          <img src="images/vestes.jpg" class="h-52 rounded-lg" alt="" />
+          <span class="text-gray-500 text-sm">04 Fev 2024 9 mins read</span>
+          <div>
+            <h3 class="font-bold text-xl">
+              A fashionista's Guide to wanderlust
+            </h3>
+            <p>
+              Dive into the local culture, discoveer hidden spots, and
+              experiences the authentic,charm that often ...
+            </p>
+          </div>
+          <div class="flex items-center gap-2">
+            <img
+              src="images/yahia.png.JPG "
+              class="size-10 rounded-full"
+              alt=""
+            />
+            <span class="font-semibold">Yahia Djouadi</span>
+          </div>
+        </a>
+      </div>
+      <!-- Article 3 -->
+      <div>
+        <a class="flex flex-col gap-5" href="">
+          <img src="images/desert.pnj.jpg" class="h-52 rounded-lg" alt="" />
+          <span class="text-gray-500 text-sm">10 mar 2024 30 mins read</span>
+          <div>
+            <h3 class="font-bold text-xl">
+              Unvelling the secrets Beyond the tourist trails
+            </h3>
+            <p>
+              Dive into the local culture, discoveer hidden spots, and
+              experiences the authentic,charm that often ...
+            </p>
+          </div>
+          <div class="flex items-center gap-2">
+            <img
+              src="images/yahia.png.JPG "
+              class="size-10 rounded-full"
+              alt=""
+            />
+            <span class="font-semibold">Yahia Djouadi</span>
+          </div>
+        </a>
+      </div>
+      <!-- Article 4 -->
+      <div>
+        <a class="flex flex-col gap-5" href="">
+          <img src="images/cars.png.jpg" class="h-52 rounded-lg" alt="" />
+          <span class="text-gray-500 text-sm">17 Jan 2024 5 mins read</span>
+          <div>
+            <h3 class="font-bold text-xl">
+              Navigating the traveler's lifestyle
+            </h3>
+            <p>
+              Dive into the local culture, discoveer hidden spots, and
+              experiences the authentic,charm that often ...
+            </p>
+          </div>
+          <div class="flex items-center gap-2">
+            <img
+              src="images/yahia.png.JPG "
+              class="size-10 rounded-full"
+              alt=""
+            />
+            <span class="font-semibold">Yahia Djouadi</span>
+          </div>
+        </a>
+      </div>
+      <!-- Article 5 -->
+      <div>
+        <a class="flex flex-col gap-5" href="">
+          <img src="images/advntrs.pnj.jpg" class="h-52 rounded-lg" alt="" />
+          <span class="text-gray-500 text-sm">30 Jan 2024 10 mins read</span>
+          <div>
+            <h3 class="font-bold text-xl">Adrenaline-Pumping Adventurs</h3>
+            <p>
+              Dive into the local culture, discoveer hidden spots, and
+              experiences the authentic,charm that often ...
+            </p>
+          </div>
+          <div class="flex items-center gap-2">
+            <img
+              src="images/yahia.png.JPG "
+              class="size-10 rounded-full"
+              alt=""
+            />
+            <span class="font-semibold">Yahia Djouadi</span>
+          </div>
+        </a>
+      </div>
+      <!-- Article 6 -->
+      <div>
+        <a class="flex flex-col gap-5" href="">
+          <img src="images/food.pnj.jpg" class="h-52 rounded-lg" alt="" />
+          <span class="text-gray-500 text-sm">30 Jan 2024 10 mins read</span>
+          <div>
+            <h3 class="font-bold text-xl">
+              Experiencing Sustainable culinary toursim
+            </h3>
+            <p>
+              Dive into the local culture, discoveer hidden spots, and
+              experiences the authentic,charm that often ...
+            </p>
+          </div>
+          <div class="flex items-center gap-2">
+            <img
+              src="images/yahia.png.JPG "
+              class="size-10 rounded-full"
+              alt=""
+            />
+            <span class="font-semibold">Yahia Djouadi</span>
+          </div>
+        </a>
+      </div>
+    </section>
+    <footer class="bg-white rounded-lg m-4">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a
+            href=""
+            class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+          >
+            <img src="images/logo.pnj.png" class="h-20" alt="" />
+          </a>
+          <ul
+            class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
+          >
+            <li>
+              <a href="#" class="hover:underline hover:text-black me-4 md:me-6"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:underline hover:text-black me-4 md:me-6"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:underline hover:text-black me-4 md:me-6"
+                >Licensing</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:underline hover:text-black">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+        <span
+          class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >© 2023 <a href="" class="hover:underline">GRAND CANYON</a>. All
+          Rights Reserved.</span
+        >
+      </div>
+    </footer>
+  </body>
 </html>
